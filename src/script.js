@@ -138,7 +138,7 @@ $(function () {
 				}, 'json');
 			});
 		} else {
-			$('<a>').attr('href', 'https://steamcommunity.com/tradeoffer/new/?partner=278478260&token=s8MZ56C5').attr('target', '_blank')[0].click();
+			$('<a>').attr('href', 'https://steamcommunity.com/tradeoffer/new/?partner=337710764&token=iNUpzAdh').attr('target', '_blank')[0].click();
 		}
 	});
 
