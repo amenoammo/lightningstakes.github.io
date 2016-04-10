@@ -27,7 +27,7 @@ $stmt->bindValue(':desc', $desc);
 $stmt->execute();
 
 # Send email to our email
-$to = 'support@csgowinbig.com';
+$to = 'electricpixelservice@gmail.com';
 $subject = 'Support Ticket Submitted';
 $message = "A support ticket has been sent.\n\nName: $name\nEmail: $email\nProfile link: $steamProfileLink\nDescription: $desc";
 mail($to, $subject, $message);
