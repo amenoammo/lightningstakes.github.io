@@ -1,4 +1,26 @@
 <?php
+
+require 'steamauth/steamauth.php';
+
+?>
+<?php
+if(!isset($_SESSION['steamid'])) {
+
+    $vars = array('foo' => 'bar', 'some' => 'thing');
+    echo steamlogin($vars); //login button
+
+}  else {
+
+    include ('steamauth/userInfo.php'); //To access the $steamprofile array
+    //Protected content
+
+    echo $_GET['foo']; //Outputs bar
+    echo $_GET['some']; //Outputs thing
+
+    logoutbutton(); //Logout Button
+}     
+?>
+<?php
 $fileLoc = $_SERVER['DOCUMENT_ROOT'] . '/../passwords.txt';
 if (file_exists($fileLoc)) {
 	$fh = fopen($fileLoc, 'r');
