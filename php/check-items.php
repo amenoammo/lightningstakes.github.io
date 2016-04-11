@@ -169,7 +169,7 @@ foreach ($allItems as $item) {
 }
 
 # 20 means $0.20, or 20 cents
-$minDeposit = $totalPrice >= 20 ? 1 : 0;
+$minDeposit = $totalPrice >= 1 ? 1 : 0;
 
 $allItemsObj = json_encode($itemsArr);
 
