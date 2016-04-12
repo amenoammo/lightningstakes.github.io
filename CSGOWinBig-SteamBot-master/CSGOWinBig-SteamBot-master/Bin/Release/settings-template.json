@@ -1,0 +1,30 @@
+{
+"Admins":["STEAMID64 of Admin account" ],
+"ApiKey":"Steam API Key goes here!",
+"mainLog": "syslog.log",
+"UseSeparateProcesses": "false",
+"AutoStartAllBots": "true",
+"Bots": [
+		 {
+            "Username":"BOT USERNAME",
+            "Password":"BOT PASSWORD",
+			"ApiKey":"Bot specific apiKey",
+            "DisplayName":"TestBot",
+            "ChatResponse":"Hi there bro",
+			"BotWebsiteURL":"Your website url",
+			"BotWebsiteName":"Your website name",
+			"BotDBPassword":"Your database password",
+			"ProfitAdmin":"STEAMID64 of Admin account",
+            "logFile": "TestBot.log",
+            "BotControlClass": "SteamBot.DepositTradeOfferUserHandler",
+            "MaximumTradeTime":180,
+            "MaximumActionGap":30,
+            "DisplayNamePrefix":"[AutomatedBot] ",
+            "TradePollingInterval":800,
+            "ConsoleLogLevel":"Success",
+            "FileLogLevel":"Info",
+            "AutoStart": "true",
+            "SchemaLang":"en"
+        }
+    ]
+}
